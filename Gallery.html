@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr">jbhnu
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="gallery.css">
     <title></title>
   </head>
   <body>
@@ -12,7 +13,7 @@
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="myHeader()">
           <i class="fa fa-bars"></i>
         </a>
       </div>
@@ -26,5 +27,17 @@
     <div class="contact">
 
     </div>
+
+    <style media="screen">
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myHeader() {
+ var x = document.getElementById("myTopnav");
+ if (x.className === "topnav") {
+   x.className += " responsive";
+ } else {
+   x.className = "topnav";
+ }
+}
+    </style>
   </body>
 </html>
