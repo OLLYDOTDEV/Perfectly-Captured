@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="gallery.css">
     <title></title>
   </head>
-  <body><!--
+  <body><!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <div class="header">
-      <!-- Load an icon library to show a hamburger menu (bars) on small screens --
       <div class="topnav" id="myTopnav">
         <a href="#gallery" class="active">Home</a>
         <a href="#about">About</a>
@@ -18,48 +17,69 @@
         </a>
       </div>
     </div>
--->
 
-    <div class="gallery" id="gallery">
+<div class="glallery" id="gallery">
 
-      <div style="text-align:center">
-        <h2>Tabbed Image Gallery</h2>
-        <p>Click on the images below:</p>
+
+    <!-- The four columns -->
+    <div class="row">
+      <div class="column">
+          <img src="C:\git\Perfectly-Captured\Sample-Images-for-Gallery\nature-b.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);" class="cursor-zoom">
       </div>
-
-      <!-- The four columns -->
-      <div class="row">
-        <div class="column">
-          <img src="C:\git\Perfectly-Captured\Sample-Images-for-Gallery\nature-b.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="C:\git\Perfectly-Captured\Sample-Images-for-Gallery\car-3-b.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="C:\git\Perfectly-Captured\Sample-Images-for-Gallery\mt-b.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-          <img src="C:\git\Perfectly-Captured\Sample-Images-for-Gallery\light-b.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-        </div>
+      <div class="column">
+        <img src="C:\git\Perfectly-Captured\Sample-Images-for-Gallery\car-3-b.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);" class="cursor-zoom">
       </div>
-      <div class="container">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img id="expandedImg" style="width:100%">
-        <div id="imgtext"></div>
+      <div class="column">
+        <img src="C:\git\Perfectly-Captured\Sample-Images-for-Gallery\mt-b.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);" class="cursor-zoom">
       </div>
-
+      <div class="column" >
+        <img src="C:\git\Perfectly-Captured\Sample-Images-for-Gallery\light-b.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);" class="cursor-zoom">
+      </div>
     </div>
-    <div class="about-me">
-
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"><a href="lvl-3\Coming soon.html" target="_blank">Buy Now</a></div>
     </div>
+    </div>
+</div>
+
+<!-- about_me  -->
+<div class="about_me">
+
+  <div class="about-section">
+  <h1>About Me</h1>
+  </div>
+
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row-about">
+  <div class="column-about-1">
+    <div class="card-about">
+      <img src="About_Me.jpg" alt="Jane" style="width:100%">
+    </div>
+  </div>
+  
+    <div class="column-about-3">
+      <div class="container-about">
+        <h2>Jane Doe</h2>
+        <p class="title-about">CEO & Founder</p>
+        <p>Hey Guys, my name is Josh, click my email to email myself or if you want to learn more about me click on the CV button and you can read that.</p>
+        <p><a href="mailto:perfectlycaptured.xyz@gmail.com?Subject=Contact%20Me" target="_top" class="mail-a">perfectlycaptured.xyz@gmail.com</a></p>
+        <br><br>
+        <a href="Sample-Images-for-Gallery\car-1-b.jpg" download class="button-about">CV</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ about_me  -->
     <div class="contact">
 
     </div>
 
-    <style media="screen">
+    <script media="screen">
     /*HEADER*/
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-/*
+
 function myHeader() {
  var x = document.getElementById("myTopnav");
  if (x.className === "topnav") {
@@ -67,15 +87,16 @@ function myHeader() {
  } else {
    x.className = "topnav";
  }
-}*/
+}
 /*GALLERY*/
 function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
+  //*var imgText = document.getElementById("imgtext");
   expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
+  //*imgText.innerHTML = imgs.alt;
   expandImg.parentElement.style.display = "block";
 }
-    </style>
+
+    </script>
   </body>
 </html>
