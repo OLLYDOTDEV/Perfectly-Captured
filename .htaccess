@@ -1,4 +1,4 @@
 Options +Indexes
 IndexOptions FancyIndexing
 
-DirectoryIndex Gallery.html
+DirectoryIndex index.html
