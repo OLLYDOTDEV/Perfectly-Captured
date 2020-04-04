@@ -23,13 +23,18 @@
   text-align: center;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 /*HEADER*/
 
 /* Add a black background color to the top navigation */
+.header {
+  position: sticky;
+}
 .topnav {
-  background-color: #333;
+  background-color: #474e5d;
   overflow: hidden;
 }
 
@@ -37,7 +42,7 @@
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #E3ECFE;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -52,7 +57,7 @@
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #111D2F;
   color: white;
 }
 
@@ -181,7 +186,7 @@ a {
   padding: 50px;
   text-align: center;
   background-color: #474e5d;
-  color: white;
+  color: #E3ECFE;
 }
 
 .container-about {
@@ -204,7 +209,7 @@ a {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: #474e5d;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -241,7 +246,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color:#3E485D;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -280,4 +285,23 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+}
+
+.footer{
+  text-align: center;
+  background-color: #474e5d;
+  padding: 64px;
+}
+.footer-button {
+  padding: 8px 16px;
+  background-color: white;
+
+}
+.social-media-section {
+  color: #E3ECFE;
+  margin: 16px 0px;
+  font:24px;
+}
+.footer-link {
+  color:#E3ECFE;
 }
