@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="gallery.css">
-    <title></title>
+    <title>Perfectly Captured</title>
   </head>
   <body><!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <div class="header">
@@ -24,16 +24,16 @@
     <!-- The four columns -->
     <div class="row">
       <div class="column">
-          <img src="C:\git\Perfectly-Captured\Sample-Images-for-Gallery\nature-b.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);" class="cursor-zoom">
+          <img src="Sample-Images-for-Gallery\nature-b.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);" class="cursor-zoom">
       </div>
       <div class="column">
-        <img src="C:\git\Perfectly-Captured\Sample-Images-for-Gallery\car-3-b.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);" class="cursor-zoom">
+        <img src="Sample-Images-for-Gallery\car-3-b.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);" class="cursor-zoom">
       </div>
       <div class="column">
-        <img src="C:\git\Perfectly-Captured\Sample-Images-for-Gallery\mt-b.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);" class="cursor-zoom">
+        <img src="Sample-Images-for-Gallery\mt-b.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);" class="cursor-zoom">
       </div>
       <div class="column" >
-        <img src="C:\git\Perfectly-Captured\Sample-Images-for-Gallery\light-b.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);" class="cursor-zoom">
+        <img src="Sample-Images-for-Gallery\light-b.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);" class="cursor-zoom">
       </div>
     </div>
     <div class="container">
@@ -45,36 +45,88 @@
 </div>
 
 <!-- about_me  -->
-<div class="about_me">
+<div class="parent">
+  <div class="container1">
+    <div class="about_me">
 
-  <div class="about-section">
-  <h1>About Me</h1>
-  </div>
+      <div class="about-section">
+      <h1>About Me</h1>
+      </div>
 
-  <h2 style="text-align:center">Our Team</h2>
-  <div class="row-about">
-  <div class="column-about-1">
-    <div class="card-about">
-      <img src="About_Me.jpg" alt="Jane" style="width:100%">
-    </div>
-  </div>
+      <div class="row-about">
+      <div class="column-about-1">
+        <div class="card-about">
+          <img src="About_Me.jpg" alt="Jane" style="width:100%">
+        </div>
+      </div>
 
-    <div class="column-about-3">
-      <div class="container-about">
-        <h2>Joshua Elphick</h2>
-        <p class="title-about">CEO & Founder</p>
-        <p>Hey Guys, my name is Josh, click my email to email myself or if you want to learn more about me click on the CV button and you can read that.</p>
-        <p><a href="mailto:perfectlycaptured.xyz@gmail.com?Subject=Contact%20Me" target="_top" class="mail-a">perfectlycaptured.xyz@gmail.com</a></p>
-        <br><br>
-        <a href="Sample-Images-for-Gallery\car-1-b.jpg" download class="button-about">CV</a>
+        <div class="column-about-3">
+          <div class="container-about">
+            <h2>Joshua Elphick</h2>
+            <p class="title-about">CEO & Founder</p>
+            <p>Hey Guys, my name is Josh, click my email to email myself or if you want to learn more about me click on the CV button and you can read that.</p>
+            <p><a href="mailto:perfectlycaptured.xyz@gmail.com?Subject=Contact%20Me" target="_top" class="mail-a">perfectlycaptured.xyz@gmail.com</a></p>
+            <br><br>
+            <a href="Sample-Images-for-Gallery\car-1-b.jpg" download class="button-about">CV</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<!--/ about_me  -->
-    <div class="contact">
+    <!--/ about_me  -->
+  <div class="container2">
+        <div class="contact">
 
+          <div class="contact-section">
+            <h1>Contact Me</h1>
+          </div>
+
+                <div class="container-contact">
+          <div style="text-align:center">
+            <p>Leave me a message, and I will get back to you as soon as possilble:</p>
+          </div>
+            <div class="row-contact">
+              <div class="column-contact">
+                <img src="Contact\contact.jpg" style="width:100%">
+              </div>
+              <div class="column-contact">
+                <form action="#">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="lname">Email</label>
+                  <input type="text" id="email" name="email" placeholder="someone@somwhere.com">
+                  <label for="country">Region</label>
+                  <select id="country" name="country">
+                    <option value="Northland">Northland</option>
+                    <option value="Auckland">Auckland</option>
+                    <option value="Waikato">Waikato</option>
+                    <option value="Bay of Plenty">Bay of Plenty</option>
+                    <option value="Gisborne">Gisborne</option>
+                    <option value="Hawke's Bay">Hawke's Bay</option>
+                    <option value="Taranaki">Taranaki</option>
+                    <option value="Manawatū-Whanganui">Manawatū-Whanganui</option>
+                    <option value="Wellington">Wellington</option>
+                    <option value="Tasman">Tasman</option>
+                    <option value="Nelson">Nelson</option>
+                    <option value="Marlborough">Marlborough</option>
+                    <option value="West Coast">West Coast</option>
+                    <option value="Canterbury">Canterbury</option>
+                    <option value="Otago">Otago</option>
+                    <option value="Southland">Southland</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
     </div>
+</div>
 
     <script media="screen">
     /*HEADER*/

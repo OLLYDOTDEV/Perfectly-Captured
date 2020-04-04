@@ -1,4 +1,30 @@
 
+.parent,
+.container1,
+.container2 {
+    display: grid;
+    grid-gap: 2px;
+}
+.parent {
+  margin-bottom: 15px;
+}
+
+.item {
+  display: grid;
+  grid-gap: 2px;
+
+  box-sizing: border-box;
+  padding: 15px;
+
+  background-color: #AFD0BF;
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
 /*HEADER*/
 
 /* Add a black background color to the top navigation */
@@ -142,7 +168,7 @@ a {
 }
 .column-about-3 {
   float: left;
-  width: 33.3%;
+  width: 66.6%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -192,5 +218,66 @@ a {
   .column-about {
     width: 100%;
     display: block;
+  }
+}
+
+/* CONTACT */
+
+.contact-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container-contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column-contact {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row-contact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-contact, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
   }
 }
