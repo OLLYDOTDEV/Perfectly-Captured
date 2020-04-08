@@ -1,57 +1,74 @@
-* {
-  box-sizing: border-box;
+.parent {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows:48px;
+    grid-column-gap:3px;
 }
 
-body {
+
+.parent > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+.header {
+  grid-column: 1 / -1
+}
+
+
+.gallery-header {
+  grid-column: 1 / -1
+}
+
+
+.about-image{
+  grid-column: 1 / 4
+}
+.about-info{
+  grid-column: -5/-1
+}
+.about-gap{
+  grid-column: 4/6
+}
+
+
+.contact-header{
+  grid-column: 1 /-1
+}
+.contact-info {
+grid-column: 1 / 5
+}
+.contact-info-image {
+grid-column:5 / -1
+}
+
+
+.footer {
+  grid-column: 1 / -1
+}
+
+
+
+html, body {
+  background-color: #ffeead;
   margin: 0;
-  font-family: Arial;
 }
 
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
+.parent > div:nth-child(1n) {
+  background-color: #96ceb4;
 }
 
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8;
-  cursor: pointer;
+.parent > div:nth-child(3n) {
+  background-color: #88d8b0;
 }
 
-.column img:hover {
-  opacity: 1;
+.parent > div:nth-child(2n) {
+      background-color: #ff6f69;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The expanding image container */
-.container {
-  position: relative;
-  display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
+.parent > div:nth-child(4n) {
+      background-color: #ffcc5c;
 }
