@@ -1,0 +1,111 @@
+html, body {
+    background-color: #fff;
+    margin: 0px;
+}
+
+
+.big-title {
+    font-family: Garamond;
+    font-size: 400px;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 50%;
+}
+
+.gallery-header-img {
+    background-image: url(/assets/img-s/flower-7.jpg);
+
+  /* Full height */
+  height: 800px; 
+  width: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* BEGINNING OF GALLERY GRID */
+
+/* END OF GALLERY GRID */
+
+
+/*About_Me*/
+
+.about-header-img {
+    background-image: url(/assets/img-s/flower-8.jpg);
+
+  /* Full height */
+  height: 800px; 
+  width: auto;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mail-a{
+    text-decoration: underline;
+  }
+  .column-about-1 {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  .column-about-3 {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  .card-about {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    color: #E3ECFE;
+  }
+  
+  .container-about {
+    padding: 0 16px;
+  }
+  
+  .container-about::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title-about {
+    color: grey;
+  }
+  
+  .button-about {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #474e5d;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button-about:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column-about {
+      width: 100%;
+      display: block;
+    }
+  }
