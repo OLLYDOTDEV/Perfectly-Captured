@@ -12,16 +12,34 @@ body {
 }
  
 .left {
-  grid-column: 1;
+  grid-column: 1 / span 1;
+  grid-row: 1;
   
 }
-.img {
-    width: 30%;
-}
+ .img {
+    width: 60%;
+    position: relative;  
+} 
 .content {
-  grid-column: 2;
+  grid-column: 2 / span 1;
+  grid-row: 1;
 }
 
 .right {
-  grid-column: 3;
+  grid-column: 2 / span 1;
+  grid-row: 2;
+}
+.social-icons {
+  color: black;
+  margin: 16px 0px;
+  width: 44px;
+  padding: 05px;
+  opacity: 0.7;
+}
+
+a { 
+  font-size: 36px;
+}
+p   {
+  font-size: 18px;
 }

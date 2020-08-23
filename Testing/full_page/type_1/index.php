@@ -1,7 +1,10 @@
+<?php
+echo '<link rel="stylesheet" href="index.css">';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
     <script src="script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,7 +83,7 @@
       <div class="about_me" id="about">
   
         <div class="about-section">
-        <h1 class="about-header-img big-title">About Me</h1>
+        <h1 class="about-header-img big-title">ABOUT ME</h1>
         </div>
   
         <div class="row-about">
