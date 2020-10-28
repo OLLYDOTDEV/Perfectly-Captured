@@ -17,7 +17,7 @@ echo '<link rel="stylesheet" href="index.css">';
 
             </div>
             <div class="column-1">
-              <img src="/assets/img-about/about_me.jpg" alt="me" style="width: 75%; padding: 5px;">
+              <img src="Perfectly-Captured/About_Me.jpg" alt="me" style="width: 75%; padding: 5px;">
               <div class="social-media">
                 <a href="https://www.facebook.com/Perfectly-Captured-100503641435947/" target="_blank" class="social-icons"><i class="fa fa-facebook-official "></i></a>
                 <a href="https://www.pinterest.nz/perfectlycapturedxyz/" target="_blank" class="social-icons">  <i class="fa fa-pinterest"></i></a>

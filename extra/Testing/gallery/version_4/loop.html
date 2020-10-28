@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loop.css">
+    <title>Document</title>
+
+
+
+
+
+</head>
+<body>
+  <p id="box"></p>
+
+
+
+  <script>
+
+    var count = 12;
+    var imgcon
+    var i;
+    for (i = 001; i <= count; i++) {
+    
+      stringnum =  String(i);
+   //   stringnum.replace(" ","")
+    
+     imgcon = '<img src="blank.gif" alt="Photo" data-echo="../../Small/image' + stringnum + '.jpg" class="gallery__img">';
+
+    
+  
+     document.getElementById('box').innerHTML += imgcon;
+    }
+
+    </script>
+
+<img src="blank.gif" alt="Photo" data-echo="../../../Small/image1.jpg" class="gallery__img">
+</body>
+
+</html>
