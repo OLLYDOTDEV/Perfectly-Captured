@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="loop.css">
     <title>Document</title>
-
+    <script  src="echo.js"></script>
 
 
 
@@ -23,18 +23,40 @@
     for (i = 001; i <= count; i++) {
     
       stringnum =  String(i);
-   //   stringnum.replace(" ","")
-    
-     imgcon = '<img src="blank.gif" alt="Photo" data-echo="../../Small/image' + stringnum + '.jpg" class="gallery__img">';
+
+     imgcon = '<img src="blank.gif" alt="Photo" data-echo="../../../../Small/image' + stringnum + '.jpg" class="gallery__img">';
 
     
   
      document.getElementById('box').innerHTML += imgcon;
     }
 
+
+ 
     </script>
 
-<img src="blank.gif" alt="Photo" data-echo="../../../Small/image1.jpg" class="gallery__img">
+
+   
+
+
+
+
+
+
+
+
+<script>
+echo.init({
+      offset: 100,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        console.log(element, 'has been', op + 'ed')
+      }
+    });
+
+    echo.render();
+    </script>
 </body>
 
 </html>
