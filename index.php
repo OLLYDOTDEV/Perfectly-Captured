@@ -45,8 +45,10 @@ $mysqli->close();
 <title>Perfectly Captured</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    
+<body onload="portfolioloader(); natureloader(); landscapeloader();">
+ 
+
+
 <!-- HEADER -->
 <div class="header" id="home">
       <div class="topnav" id="myTopnav">
@@ -78,6 +80,7 @@ $mysqli->close();
 <div class="button" onclick="switch_div(1);">
   Portfolio
 </div>
+
 <div class="button" onclick="switch_div(2);">
   Nature
 </div>
@@ -88,133 +91,22 @@ $mysqli->close();
   4
 </div> -->
 <!-- Defualt Viewing -->
-<div class="content" id="show_1">
+<div class="content" id="show_1" >
   <div class="container">        
-      <div class="gallery">      
-          <figure class="gallery__item gallery_item-1">
-          <img src="blank.gif" alt="Photo" data-echo="Small/image001.jpg" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery_item-2">
-              <img src="blank.gif" alt="Photo" data-echo="Small/image002.jpg" class="gallery__img">
-          </figure>
-          <figure class="gallery__item gallery_item-3">
-              <img src="blank.gif" data-echo="Small/image073.jpg" class="gallery__img" alt="Image 3">
-          </figure>
-          <figure class="gallery__item gallery_item-4">
-              <img src="blank.gif" data-echo="Small/image027.jpg" class="gallery__img" alt="Image 4">
-          </figure>
-          <figure class="gallery__item gallery_item-5">
-              <img src="blank.gif" data-echo="Small/image015.jpg" class="gallery__img" alt="Image 5">
-          </figure>
-          <figure class="gallery__item gallery_item-6">
-              <img src="blank.gif" data-echo="Small/image006.jpg" class="gallery__img" alt="Image 6">
-          </figure>
-
-          <figure class="gallery__item gallery_item-7">
-              <img src="blank.gif" data-echo="Small/image040.jpg" class="gallery__img" alt="Image 7">
-          </figure>
-          <figure class="gallery__item gallery_item-8">
-              <img src="blank.gif" data-echo="Small/image008.jpg" class="gallery__img" alt="Image 8">
-          </figure>
-          <figure class="gallery__item gallery_item-9">
-              <img src="blank.gif" data-echo="Small/image009.jpg" class="gallery__img" alt="Image 9">
-          </figure>
-          <figure class="gallery__item gallery_item-10">
-              <img src="blank.gif" data-echo="Small/image074.jpg" class="gallery__img" alt="Image 10">
-          </figure>
-          <figure class="gallery__item gallery_item-11">
-              <img src="blank.gif" data-echo="Small/image030.jpg" class="gallery__img" alt="Image 11">
-          </figure>
-          <figure class="gallery__item gallery_item-12">
-              <img src="blank.gif" data-echo="Small/image052.jpg" class="gallery__img" alt="Image 12">
-          </figure>
-      </div>
+   <p id="box" class="gallery" ></p>
   </div>
 </div>
-<div class="content hide" id="show_2">
-  <div class="container">        
-      <div class="gallery">
-          <figure class="gallery__item gallery_item-1">
-              <img src="blank.gif" data-echo="Small/image004.jpg" class="gallery__img" alt="Image 1">
-          </figure>
-          <figure class="gallery__item gallery_item-2">
-              <img src="blank.gif" data-echo="Small/image019.jpg" class="gallery__img" alt="Image 2">
-          </figure>
-          <figure class="gallery__item gallery_item-3">
-              <img src="blank.gif" data-echo="Small/image041.jpg" class="gallery__img" alt="Image 3">
-          </figure>
-          <figure class="gallery__item gallery_item-4">
-              <img src="blank.gif" data-echo="Small/image044.jpg" class="gallery__img" alt="Image 4">
-          </figure>
-          <figure class="gallery__item gallery_item-5">
-              <img src="blank.gif" data-echo="Small/image012.jpg" class="gallery__img" alt="Image 5">
-          </figure>
-          <figure class="gallery__item gallery_item-6">
-              <img src="blank.gif" data-echo="Small/image025.jpg" class="gallery__img" alt="Image 6">
-          </figure>
 
-          <figure class="gallery__item gallery_item-7">
-              <img src="blank.gif" data-echo="Small/image049.jpg" class="gallery__img" alt="Image 7">
-          </figure>
-          <figure class="gallery__item gallery_item-8">
-              <img src="blank.gif" data-echo="Small/image059.jpg" class="gallery__img" alt="Image 8">
-          </figure>
-          <figure class="gallery__item gallery_item-9">
-              <img src="blank.gif" data-echo="Small/image045.jpg" class="gallery__img" alt="Image 9">
-          </figure>
-          <figure class="gallery__item gallery_item-10">
-              <img src="blank.gif" data-echo="Small/image016.jpg" class="gallery__img" alt="Image 10">
-          </figure>
-          <figure class="gallery__item gallery_item-11">
-              <img src="blank.gif" data-echo="Small/image002.jpg" class="gallery__img" alt="Image 11">
-          </figure>
-          <figure class="gallery__item gallery_item-12">
-              <img src="blank.gif" data-echo="Small/image050.jpg" class="gallery__img" alt="Image 12">
-          </figure>
-      </div>
+<div class="content hide" id="show_2" >
+  <div class="container">        
+  <p id="box2" class="gallery"></p>
   </div>
 </div>
+
+
 <div class="content hide" id="show_3">
   <div class="container">        
-      <div class="gallery">
-          <figure class="gallery__item gallery_item-1">
-              <img src="blank.gif" data-echo="Small/image006.jpg" class="gallery__img" alt="Image 1">
-          </figure>
-          <figure class="gallery__item gallery_item-2">
-              <img src="blank.gif"  data-echo="Small/image010.jpg" class="gallery__img" alt="Image 2">
-          </figure>
-          <figure class="gallery__item gallery_item-3">
-              <img src="blank.gif"  data-echo="Small/image026.jpg" class="gallery__img" alt="Image 3">
-          </figure>
-          <figure class="gallery__item gallery_item-4">
-              <img src="blank.gif"  data-echo="Small/image027.jpg" class="gallery__img" alt="Image 4">
-          </figure>
-          <figure class="gallery__item gallery_item-5">
-              <img src="blank.gif"  data-echo="Small/image030.jpg" class="gallery__img" alt="Image 5">
-          </figure>
-          <figure class="gallery__item gallery_item-6">
-              <img src="blank.gif"  data-echo="Small/image031.jpg" class="gallery__img" alt="Image 6">
-          </figure>
-
-          <figure class="gallery__item gallery_item-7">
-              <img src="blank.gif"  data-echo="Small/image032.jpg" class="gallery__img" alt="Image 7">
-          </figure>
-          <figure class="gallery__item gallery_item-8">
-              <img src="blank.gif"  data-echo="Small/image028.jpg" class="gallery__img" alt="Image 8">
-          </figure>
-          <figure class="gallery__item gallery_item-9">
-              <img src="blank.gif"  data-echo="Small/image033.jpg" class="gallery__img" alt="Image 9">
-          </figure>
-          <figure class="gallery__item gallery_item-10">
-              <img src="blank.gif"  data-echo="Small/image039.jpg" class="gallery__img" alt="Image 10">
-          </figure>
-          <figure class="gallery__item gallery_item-11">
-              <img src="blank.gif"  data-echo="Small/image036.jpg" class="gallery__img" alt="Image 11">
-          </figure>
-          <figure class="gallery__item gallery_item-12">
-              <img src="blank.gif"  data-echo="Small/image008.jpg" class="gallery__img" alt="Image 12">
-          </figure>
-      </div>
+      <p id="box3" class="gallery"></p>
   </div>
 </div>
 <!-- <div class="content hide" id="show_4">
@@ -320,7 +212,7 @@ $mysqli->close();
                   </form>
                 </div>
                 <div class="column-contact-image">
-                  <img src="contact.jpg" alt="contact-image" style="width:100%;">
+                  <img src="blank.gif" data-echo="contact.jpg" alt="contact-image" style="width:100%;">
                 </div>
               </div>
             </div>
@@ -363,6 +255,61 @@ $mysqli->close();
 
 <!-- FOOTER END -->
 </body>
+
+
+<script>
+function portfolioloader(){
+
+var count = 12;
+var imgcon
+var i;
+for (i = 1; i <= count; i++) {
+
+stringnum =  String(i);
+
+imgcon = '<img src="blank.gif" alt="Photo" data-echo="../../../../Small/image' + stringnum + '.jpg" class="gallery__img gallery_item-'+stringnum+'">';
+
+
+document.getElementById('box').innerHTML += imgcon;
+}
+}
+
+
+function natureloader(){
+
+var count = 12;
+var imgcon
+var i;
+for (i = 1; i <= count; i++) {
+
+stringnum =  String(i);
+
+imgcon = '<img src="blank.gif" alt="Photo" data-echo="../../../../Nature/image' + stringnum + '.jpg" class="gallery__img gallery_item-'+stringnum+'">';
+
+
+document.getElementById('box2').innerHTML += imgcon;
+
+}
+}
+
+
+function landscapeloader(){
+
+var count = 12;
+var imgcon
+var i;
+for (i = 1; i <= count; i++) {
+
+stringnum =  String(i);
+
+imgcon = '<img src="blank.gif" alt="Photo" data-echo="../../../../landscapes/image' + stringnum + '.jpg" class="gallery__img gallery_item-'+stringnum+'">';
+
+
+document.getElementById('box3').innerHTML += imgcon;
+
+}
+}
+</script>
 
 <style>
 html {
@@ -788,6 +735,11 @@ a.underline {
 
 
     <script src="jquery-2.0.2.js"></script>
+
+
+
+
+
 <script>
 function myHeader() {
  var x = document.getElementById("myTopnav");
@@ -828,5 +780,28 @@ echo.init({
     echo.render();
 </script>
 
+
+<script>
+function galleryloader(){
+
+  var count = 12;
+var imgcon
+var i;
+for (i = 1; i <= count; i++) {
+
+  stringnum =  String(i);
+
+ imgcon = '<img src="blank.gif" alt="Photo" data-echo="../../../../Small/image' + stringnum + '.jpg" class="gallery__img gallery_item-'+stringnum+'">';
+
+
+
+ document.getElementById('box').innerHTML += imgcon;
+}
+
+
+} 
+
+
+</script>
 
 </html>

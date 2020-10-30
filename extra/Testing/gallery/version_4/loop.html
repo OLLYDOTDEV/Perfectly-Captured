@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="loop.css">
-    <title>Document</title>
+    <title>Loop Test</title>
     <script  src="echo.js"></script>
 
 
@@ -11,8 +11,7 @@
 
 </head>
 <body>
-  <p id="box"></p>
-
+  <p id="box" class="gallery"></p>
 
 
   <script>
@@ -20,11 +19,11 @@
     var count = 12;
     var imgcon
     var i;
-    for (i = 001; i <= count; i++) {
+    for (i = 1; i <= count; i++) {
     
       stringnum =  String(i);
 
-     imgcon = '<img src="blank.gif" alt="Photo" data-echo="../../../../Small/image' + stringnum + '.jpg" class="gallery__img">';
+     imgcon = '<img src="blank.gif" alt="Photo" data-echo="../../../../Small/image' + stringnum + '.jpg" class="gallery__img gallery_item-'+stringnum+'">';
 
     
   
@@ -34,16 +33,6 @@
 
  
     </script>
-
-
-   
-
-
-
-
-
-
-
 
 <script>
 echo.init({
